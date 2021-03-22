@@ -1,0 +1,269 @@
+# JMH version: 1.26
+# VM version: JDK 1.8.0_282, OpenJDK 64-Bit Server VM, 25.282-b08
+# VM invoker: C:\Users\Administrator\Desktop\java\jdk8u282-b08-jre\bin\java.exe
+# VM options: -Xmx6G -Xms6G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 1 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 16 threads, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: test.clock.SystemTime.testBufferClock
+
+# Run progress: 0.00% complete, ETA 00:04:10
+# Fork: 1 of 5
+# Warmup Iteration   1: 108.382 ±(99.9%) 9.307 ms/op
+# Warmup Iteration   2: 104.955 ±(99.9%) 7.855 ms/op
+Iteration   1: 101.750 ±(99.9%) 10.629 ms/op
+                 testBufferClock·p0.00:   49.283 ms/op
+                 testBufferClock·p0.50:   50.790 ms/op
+                 testBufferClock·p0.90:   250.767 ms/op
+                 testBufferClock·p0.95:   299.683 ms/op
+                 testBufferClock·p0.99:   368.952 ms/op
+                 testBufferClock·p0.999:  380.109 ms/op
+                 testBufferClock·p0.9999: 380.109 ms/op
+                 testBufferClock·p1.00:   380.109 ms/op
+
+
+# Run progress: 10.00% complete, ETA 00:04:08
+# Fork: 2 of 5
+# Warmup Iteration   1: 108.751 ±(99.9%) 8.945 ms/op
+# Warmup Iteration   2: 106.886 ±(99.9%) 8.041 ms/op
+Iteration   1: 104.853 ±(99.9%) 10.898 ms/op
+                 testBufferClock·p0.00:   49.349 ms/op
+                 testBufferClock·p0.50:   53.412 ms/op
+                 testBufferClock·p0.90:   256.377 ms/op
+                 testBufferClock·p0.95:   294.650 ms/op
+                 testBufferClock·p0.99:   370.724 ms/op
+                 testBufferClock·p0.999:  575.668 ms/op
+                 testBufferClock·p0.9999: 575.668 ms/op
+                 testBufferClock·p1.00:   575.668 ms/op
+
+
+# Run progress: 20.00% complete, ETA 00:03:40
+# Fork: 3 of 5
+# Warmup Iteration   1: 107.772 ±(99.9%) 8.450 ms/op
+# Warmup Iteration   2: 106.231 ±(99.9%) 7.769 ms/op
+Iteration   1: 106.367 ±(99.9%) 11.041 ms/op
+                 testBufferClock·p0.00:   49.807 ms/op
+                 testBufferClock·p0.50:   53.641 ms/op
+                 testBufferClock·p0.90:   276.876 ms/op
+                 testBufferClock·p0.95:   300.994 ms/op
+                 testBufferClock·p0.99:   356.542 ms/op
+                 testBufferClock·p0.999:  373.293 ms/op
+                 testBufferClock·p0.9999: 373.293 ms/op
+                 testBufferClock·p1.00:   373.293 ms/op
+
+
+# Run progress: 30.00% complete, ETA 00:03:13
+# Fork: 4 of 5
+# Warmup Iteration   1: 108.131 ±(99.9%) 8.923 ms/op
+# Warmup Iteration   2: 103.310 ±(99.9%) 7.496 ms/op
+Iteration   1: 101.412 ±(99.9%) 10.401 ms/op
+                 testBufferClock·p0.00:   49.807 ms/op
+                 testBufferClock·p0.50:   51.118 ms/op
+                 testBufferClock·p0.90:   246.415 ms/op
+                 testBufferClock·p0.95:   292.028 ms/op
+                 testBufferClock·p0.99:   367.972 ms/op
+                 testBufferClock·p0.999:  377.487 ms/op
+                 testBufferClock·p0.9999: 377.487 ms/op
+                 testBufferClock·p1.00:   377.487 ms/op
+
+
+# Run progress: 40.00% complete, ETA 00:02:46
+# Fork: 5 of 5
+# Warmup Iteration   1: 107.871 ±(99.9%) 8.932 ms/op
+# Warmup Iteration   2: 106.649 ±(99.9%) 8.281 ms/op
+Iteration   1: 105.493 ±(99.9%) 12.275 ms/op
+                 testBufferClock·p0.00:   49.873 ms/op
+                 testBufferClock·p0.50:   53.608 ms/op
+                 testBufferClock·p0.90:   271.214 ms/op
+                 testBufferClock·p0.95:   385.876 ms/op
+                 testBufferClock·p0.99:   437.256 ms/op
+                 testBufferClock·p0.999:  628.097 ms/op
+                 testBufferClock·p0.9999: 628.097 ms/op
+                 testBufferClock·p1.00:   628.097 ms/op
+
+
+
+Result "test.clock.SystemTime.testBufferClock":
+  N = 4000
+  mean =    103.946 ±(99.9%) 4.933 ms/op
+
+  Histogram, ms/op:
+    [  0.000,  50.000) = 25 
+    [ 50.000, 100.000) = 2960 
+    [100.000, 150.000) = 70 
+    [150.000, 200.000) = 120 
+    [200.000, 250.000) = 353 
+    [250.000, 300.000) = 276 
+    [300.000, 350.000) = 82 
+    [350.000, 400.000) = 77 
+    [400.000, 450.000) = 34 
+    [450.000, 500.000) = 0 
+    [500.000, 550.000) = 1 
+    [550.000, 600.000) = 1 
+    [600.000, 650.000) = 1 
+
+  Percentiles, ms/op:
+      p(0.0000) =     49.283 ms/op
+     p(50.0000) =     52.625 ms/op
+     p(90.0000) =    258.186 ms/op
+     p(95.0000) =    299.342 ms/op
+     p(99.0000) =    398.952 ms/op
+     p(99.9000) =    449.311 ms/op
+     p(99.9900) =    628.097 ms/op
+     p(99.9990) =    628.097 ms/op
+     p(99.9999) =    628.097 ms/op
+    p(100.0000) =    628.097 ms/op
+
+
+# JMH version: 1.26
+# VM version: JDK 1.8.0_282, OpenJDK 64-Bit Server VM, 25.282-b08
+# VM invoker: C:\Users\Administrator\Desktop\java\jdk8u282-b08-jre\bin\java.exe
+# VM options: -Xmx6G -Xms6G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 1 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 16 threads, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: test.clock.SystemTime.testSystemMilliSpeed
+
+# Run progress: 50.00% complete, ETA 00:02:18
+# Fork: 1 of 5
+# Warmup Iteration   1: 603.483 ±(99.9%) 40.932 ms/op
+# Warmup Iteration   2: 597.995 ±(99.9%) 32.617 ms/op
+Iteration   1: 601.108 ±(99.9%) 54.587 ms/op
+                 testSystemMilliSpeed·p0.00:   331.874 ms/op
+                 testSystemMilliSpeed·p0.50:   489.161 ms/op
+                 testSystemMilliSpeed·p0.90:   944.977 ms/op
+                 testSystemMilliSpeed·p0.95:   966.368 ms/op
+                 testSystemMilliSpeed·p0.99:   1140.138 ms/op
+                 testSystemMilliSpeed·p0.999:  1145.045 ms/op
+                 testSystemMilliSpeed·p0.9999: 1145.045 ms/op
+                 testSystemMilliSpeed·p1.00:   1145.045 ms/op
+
+
+# Run progress: 60.00% complete, ETA 00:01:52
+# Fork: 2 of 5
+# Warmup Iteration   1: 607.083 ±(99.9%) 46.146 ms/op
+# Warmup Iteration   2: 590.632 ±(99.9%) 18.844 ms/op
+Iteration   1: 611.557 ±(99.9%) 58.608 ms/op
+                 testSystemMilliSpeed·p0.00:   291.504 ms/op
+                 testSystemMilliSpeed·p0.50:   506.462 ms/op
+                 testSystemMilliSpeed·p0.90:   935.120 ms/op
+                 testSystemMilliSpeed·p0.95:   1016.070 ms/op
+                 testSystemMilliSpeed·p0.99:   1160.648 ms/op
+                 testSystemMilliSpeed·p0.999:  1170.211 ms/op
+                 testSystemMilliSpeed·p0.9999: 1170.211 ms/op
+                 testSystemMilliSpeed·p1.00:   1170.211 ms/op
+
+
+# Run progress: 70.00% complete, ETA 00:01:25
+# Fork: 3 of 5
+# Warmup Iteration   1: 607.082 ±(99.9%) 43.689 ms/op
+# Warmup Iteration   2: 590.663 ±(99.9%) 25.019 ms/op
+Iteration   1: 587.530 ±(99.9%) 47.276 ms/op
+                 testSystemMilliSpeed·p0.00:   288.358 ms/op
+                 testSystemMilliSpeed·p0.50:   495.976 ms/op
+                 testSystemMilliSpeed·p0.90:   864.865 ms/op
+                 testSystemMilliSpeed·p0.95:   942.670 ms/op
+                 testSystemMilliSpeed·p0.99:   980.586 ms/op
+                 testSystemMilliSpeed·p0.999:  981.467 ms/op
+                 testSystemMilliSpeed·p0.9999: 981.467 ms/op
+                 testSystemMilliSpeed·p1.00:   981.467 ms/op
+
+
+# Run progress: 80.00% complete, ETA 00:00:57
+# Fork: 4 of 5
+# Warmup Iteration   1: 612.320 ±(99.9%) 42.971 ms/op
+# Warmup Iteration   2: 597.724 ±(99.9%) 29.810 ms/op
+Iteration   1: 595.826 ±(99.9%) 68.408 ms/op
+                 testSystemMilliSpeed·p0.00:   286.786 ms/op
+                 testSystemMilliSpeed·p0.50:   543.162 ms/op
+                 testSystemMilliSpeed·p0.90:   891.499 ms/op
+                 testSystemMilliSpeed·p0.95:   1105.409 ms/op
+                 testSystemMilliSpeed·p0.99:   1430.174 ms/op
+                 testSystemMilliSpeed·p0.999:  1468.006 ms/op
+                 testSystemMilliSpeed·p0.9999: 1468.006 ms/op
+                 testSystemMilliSpeed·p1.00:   1468.006 ms/op
+
+
+# Run progress: 90.00% complete, ETA 00:00:28
+# Fork: 5 of 5
+# Warmup Iteration   1: 665.839 ±(99.9%) 59.329 ms/op
+# Warmup Iteration   2: 662.949 ±(99.9%) 50.646 ms/op
+Iteration   1: 656.355 ±(99.9%) 39.678 ms/op
+                 testSystemMilliSpeed·p0.00:   331.874 ms/op
+                 testSystemMilliSpeed·p0.50:   701.497 ms/op
+                 testSystemMilliSpeed·p0.90:   724.776 ms/op
+                 testSystemMilliSpeed·p0.95:   879.336 ms/op
+                 testSystemMilliSpeed·p0.99:   1203.639 ms/op
+                 testSystemMilliSpeed·p0.999:  1256.194 ms/op
+                 testSystemMilliSpeed·p0.9999: 1256.194 ms/op
+                 testSystemMilliSpeed·p1.00:   1256.194 ms/op
+
+
+
+Result "test.clock.SystemTime.testSystemMilliSpeed":
+  N = 686
+  mean =    609.531 ±(99.9%) 24.374 ms/op
+
+  Histogram, ms/op:
+    [   0.000,  125.000) = 0 
+    [ 125.000,  250.000) = 0 
+    [ 250.000,  375.000) = 44 
+    [ 375.000,  500.000) = 248 
+    [ 500.000,  625.000) = 99 
+    [ 625.000,  750.000) = 178 
+    [ 750.000,  875.000) = 45 
+    [ 875.000, 1000.000) = 43 
+    [1000.000, 1125.000) = 17 
+    [1125.000, 1250.000) = 7 
+    [1250.000, 1375.000) = 3 
+    [1375.000, 1500.000) = 2 
+    [1500.000, 1625.000) = 0 
+    [1625.000, 1750.000) = 0 
+    [1750.000, 1875.000) = 0 
+
+  Percentiles, ms/op:
+      p(0.0000) =    286.786 ms/op
+     p(50.0000) =    524.812 ms/op
+     p(90.0000) =    881.118 ms/op
+     p(95.0000) =    977.220 ms/op
+     p(99.0000) =   1148.317 ms/op
+     p(99.9000) =   1468.006 ms/op
+     p(99.9900) =   1468.006 ms/op
+     p(99.9990) =   1468.006 ms/op
+     p(99.9999) =   1468.006 ms/op
+    p(100.0000) =   1468.006 ms/op
+
+
+# Run complete. Total time: 00:04:47
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                                       Mode   Cnt     Score    Error  Units
+SystemTime.testBufferClock                                    sample  4000   103.946 ±  4.933  ms/op
+SystemTime.testBufferClock:testBufferClock·p0.00              sample          49.283           ms/op
+SystemTime.testBufferClock:testBufferClock·p0.50              sample          52.625           ms/op
+SystemTime.testBufferClock:testBufferClock·p0.90              sample         258.186           ms/op
+SystemTime.testBufferClock:testBufferClock·p0.95              sample         299.342           ms/op
+SystemTime.testBufferClock:testBufferClock·p0.99              sample         398.952           ms/op
+SystemTime.testBufferClock:testBufferClock·p0.999             sample         449.311           ms/op
+SystemTime.testBufferClock:testBufferClock·p0.9999            sample         628.097           ms/op
+SystemTime.testBufferClock:testBufferClock·p1.00              sample         628.097           ms/op
+SystemTime.testSystemMilliSpeed                               sample   686   609.531 ± 24.374  ms/op
+SystemTime.testSystemMilliSpeed:testSystemMilliSpeed·p0.00    sample         286.786           ms/op
+SystemTime.testSystemMilliSpeed:testSystemMilliSpeed·p0.50    sample         524.812           ms/op
+SystemTime.testSystemMilliSpeed:testSystemMilliSpeed·p0.90    sample         881.118           ms/op
+SystemTime.testSystemMilliSpeed:testSystemMilliSpeed·p0.95    sample         977.220           ms/op
+SystemTime.testSystemMilliSpeed:testSystemMilliSpeed·p0.99    sample        1148.317           ms/op
+SystemTime.testSystemMilliSpeed:testSystemMilliSpeed·p0.999   sample        1468.006           ms/op
+SystemTime.testSystemMilliSpeed:testSystemMilliSpeed·p0.9999  sample        1468.006           ms/op
+SystemTime.testSystemMilliSpeed:testSystemMilliSpeed·p1.00    sample        1468.006           ms/op
+
+Benchmark result is saved to .\logs\windows_t16.json
