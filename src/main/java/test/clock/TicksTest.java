@@ -39,20 +39,13 @@ public class TicksTest {
         long end = System.currentTimeMillis();
 
         // 统计结果
-        int min = 0;
-        int max = 0;
-        long total = 0;
-        int minCount = 0;
-        int maxCount = 0;
-        long totalCount = 0;
-        int last = 0;
-        int skip = 0;
-        List<Integer> ticksList = new ArrayList<>(600);
-        List<Integer> ticksCountList = new ArrayList<>(600);
+        long min = 0, max = 0, total = 0, minCount = 0, maxCount = 0, totalCount = 0, last = 0, skip = 0;
+        List<Long> ticksList = new ArrayList<>(600);
+        List<Long> ticksCountList = new ArrayList<>(600);
         for (int i = 1; i < length; i++) {
             if (values[i] != values[i - 1]) {
-                int step = (int) (values[i] - values[i - 1]);
-                int stepCount = i - last;
+                long step = (values[i] - values[i - 1]);
+                long stepCount = i - last;
                 last = i;
                 System.out.printf("step %09d %d %d%n", i, step, stepCount);
 
